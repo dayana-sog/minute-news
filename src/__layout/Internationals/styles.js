@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  height: 90vh;
   border-top: 1px solid red;
   width: 75%;
   margin: 0 auto;
