@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.article`
-  height: 90vh;
-  margin: 10rem 21.5rem;
+  height: auto;
+  margin: 10rem 21.5rem 5rem 21.5rem;
 `;
 
 export const HeaderEditorals = styled.div`
@@ -55,12 +55,13 @@ export const GridEditorial = styled.ul`
     flex-direction: column;
     background: #fff;
     padding: 40px;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 
-    border-left: 5px solid red;
+    border-left: 3px solid red;
 
     img {
       width: 100%;
+      max-height: 200px;
       object-fit: cover;
       display: block;
     }

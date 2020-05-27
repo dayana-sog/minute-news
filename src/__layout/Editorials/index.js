@@ -25,7 +25,7 @@ function Editorials() {
           params: {
             sources: 'google-news-br',
             apiKey: 'accdf88fbcb1426cac56ec98d7f0d381',
-            pageSize: 6,
+            pageSize: 9,
           },
         });
 

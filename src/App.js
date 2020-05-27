@@ -2,6 +2,7 @@ import React from 'react';
 
 import Home from './__layout/Home';
 import Editorials from './__layout/Editorials';
+import Internationals from './__layout/Internationals';
 
 import './global.css';
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Home />
       <Editorials />
+      <Internationals />
     </>
   );
 }
