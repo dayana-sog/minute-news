@@ -79,6 +79,8 @@ export const NotificationList = styled.div`
     list-style-type: none;
     color: #333;
 
+    z-index: 9999;
+
     &:not(:last-of-type) {
       margin-bottom: 1.5rem;
     }
