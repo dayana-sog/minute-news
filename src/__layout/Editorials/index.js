@@ -24,7 +24,7 @@ function Editorials() {
         const { data } = await api.get('/v2/top-headlines', {
           params: {
             sources: 'google-news-br',
-            apiKey: 'accdf88fbcb1426cac56ec98d7f0d381',
+            apiKey: `${process.env.REACT_APP_API_KEY}`,
             pageSize: 9,
           },
         });
@@ -47,7 +47,7 @@ function Editorials() {
         <ActionOrdenation>
           <h2>Ordenar por:</h2>
           <button type="button">
-            <h3>Data</h3>
+            <h3>Categoris</h3>
             <AiOutlineCaretDown size={18} color="#fff" />
           </button>
         </ActionOrdenation>

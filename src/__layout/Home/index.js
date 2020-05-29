@@ -17,13 +17,12 @@ function Home() {
         const { data } = await api.get('/v2/top-headlines', {
           params: {
             sources: 'google-news-br',
-            apiKey: 'accdf88fbcb1426cac56ec98d7f0d381',
+            apiKey: `${process.env.REACT_APP_API_KEY}`,
           },
         });
 
         const images = data.articles;
 
-        console.log(images);
         return setSlideImages(images);
       } catch (error) {
         return console.log('Erro', error);

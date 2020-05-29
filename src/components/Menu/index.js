@@ -19,7 +19,7 @@ function Menu() {
         <img src={logo} alt="logo" />
 
         <ul>
-          <AnchorLink href="#">Início</AnchorLink>
+          <AnchorLink href="/">Início</AnchorLink>
           <AnchorLink offset="250" href="#">
             Brasil
             <button type="button" onClick={handleVisible}>
@@ -35,9 +35,9 @@ function Menu() {
               </NotificationList>
             ) : null}
           </AnchorLink>
-          <AnchorLink href="#">Mundo</AnchorLink>
-          <AnchorLink href="#">Blogs</AnchorLink>
-          <AnchorLink href="#">Assine</AnchorLink>
+          <AnchorLink href="#internatinal">Mundo</AnchorLink>
+          <AnchorLink href="/">Blogs</AnchorLink>
+          <AnchorLink href="/">Assine</AnchorLink>
         </ul>
       </WrapperMenu>
     </Container>

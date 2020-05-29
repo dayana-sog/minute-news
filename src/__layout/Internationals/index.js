@@ -33,16 +33,12 @@ function Internationals() {
     'entertainment',
   ]);
 
-  function handleVisible() {
-    setVisible(!visible);
-  }
-
   useEffect(() => {
     const fetchMyAPI = async () => {
       try {
         const { data } = await api.get('/v2/everything', {
           params: {
-            apiKey: 'accdf88fbcb1426cac56ec98d7f0d381',
+            apiKey: `${process.env.REACT_APP_API_KEY}`,
             pageSize: 9,
             page: `${pages}`,
             q: `${catagory}`,
@@ -66,14 +62,18 @@ function Internationals() {
     setCategory(e.target.value);
   }
 
+  function handleVisible() {
+    setVisible(!visible);
+  }
+
   return (
-    <Container>
+    <Container id="internatinal">
       <HeaderEditorals>
         <h1>Internacionais</h1>
         <ActionOrdenation>
           <h2>Ordenar por:</h2>
           <button type="button" onClick={handleVisible}>
-            <h3>Data</h3>
+            <h3>Categoria</h3>
             <AiOutlineCaretDown size={18} color="#fff" />
           </button>
           {visible ? (
