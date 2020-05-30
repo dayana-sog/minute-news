@@ -7,8 +7,20 @@ export const HomeImage = styled.div`
   width: 70%;
 
   .each-slide > div {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 500px;
+
+    @media (max-width: 870px) {
+      height: 350px;
+    }
+
+    @media (max-width: 560px) {
+      height: 250px;
+    }
+
+    @media (max-width: 425px) {
+      height: 240px;
+    }
   }
 `;

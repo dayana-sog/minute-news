@@ -47,7 +47,7 @@ function Editorials() {
         <ActionOrdenation>
           <h2>Ordenar por:</h2>
           <button type="button">
-            <h3>Categoris</h3>
+            <h3>Data</h3>
             <AiOutlineCaretDown size={18} color="#fff" />
           </button>
         </ActionOrdenation>

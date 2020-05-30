@@ -7,13 +7,45 @@ export const Container = styled.div`
 
   position: relative;
 
+  @media (max-width: 780px) {
+    height: 13rem;
+  }
+
+  @media (max-width: 425px) {
+    height: 11.5rem;
+  }
+
   img {
     width: 38rem;
     height: 9rem;
+
+    @media (max-width: 1300px) {
+      width: 30rem;
+      height: 7rem;
+    }
+
+    @media (max-width: 1080px) {
+      width: 22rem;
+      height: 6rem;
+    }
+
+    @media (max-width: 640px) {
+      width: 16rem;
+      height: 4rem;
+    }
+
+    @media (max-width: 550px) {
+      width: 13rem;
+      height: 4rem;
+    }
+
+    @media (max-width: 425px) {
+      width: 11rem;
+      height: 3rem;
+    }
   }
 
   ul {
-    margin-right: 1rem;
     font-weight: 400;
     font-size: 2.4rem;
 
@@ -23,6 +55,32 @@ export const Container = styled.div`
       text-decoration: none;
       color: #333;
       margin-left: 2em;
+
+      @media (max-width: 1300px) {
+        margin-left: 1.7rem;
+      }
+
+      @media (max-width: 1080px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 780px) {
+        font-size: 1.3rem;
+        margin-left: 1.5rem;
+      }
+
+      @media (max-width: 590px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 430px) {
+        font-size: 0.9rem;
+        margin-left: 1.2rem;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 0.8rem;
+      }
     }
     a:hover {
       text-decoration: none;
@@ -47,42 +105,13 @@ export const WrapperMenu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-`;
 
-export const NotificationList = styled.div`
-  position: absolute;
-  width: 260px;
-  left: calc(53% - 4px);
-  top: calc(100% + 4px);
-  background: rgba(219, 219, 219, 0.6);
-  border-radius: 4px;
-  border-bottom: 5px solid red;
-  padding: 15px 5px;
-  display: ${(props) => (props.visible ? 'block' : 'none')};
-  &::before {
-    content: '';
-    position: absolute;
-    left: calc(50% - 10px);
-    top: -20px;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid rgba(219, 219, 219, 0.8);
+  @media (max-width: 780px) {
+    height: 11rem;
   }
 
-  li {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-
-    list-style-type: none;
-    color: #333;
-
-    z-index: 9999;
-
-    &:not(:last-of-type) {
-      margin-bottom: 1.5rem;
-    }
+  @media (max-width: 425px) {
+    height: 10rem;
+    width: 90%;
   }
 `;

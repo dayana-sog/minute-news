@@ -2,7 +2,28 @@ import styled from 'styled-components';
 
 export const Container = styled.article`
   height: auto;
-  margin: 10rem 21.5rem 5rem 21.5rem;
+  margin: 10rem 20.5rem 5rem 20.5rem;
+
+  @media (max-width: 1024px) {
+    margin: 10rem 11.5rem 5rem 11.5rem;
+  }
+
+  @media (max-width: 950px) {
+    margin: 10rem 7rem 5rem 7rem;
+    font-size: 60%;
+  }
+
+  @media (max-width: 900px) {
+    margin: 10rem 7.5rem 5rem 7.5rem;
+  }
+
+  @media (max-width: 800px) {
+    margin: 5rem 6.5rem 4rem 6.5rem;
+  }
+
+  @media (max-width: 425px) {
+    margin: 3rem 3.5rem 4rem 3.5rem;
+  }
 `;
 
 export const HeaderEditorals = styled.div`
@@ -10,9 +31,21 @@ export const HeaderEditorals = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+
   h1 {
     font-size: 4.5rem;
     font-weight: 400;
+
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 2rem;
+    }
   }
 `;
 export const ActionOrdenation = styled.div`
@@ -22,6 +55,15 @@ export const ActionOrdenation = styled.div`
     font-size: 3rem;
     font-weight: 300;
     margin-right: 3rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 1rem;
+      align-self: center;
+    }
   }
 
   button {
@@ -37,6 +79,11 @@ export const ActionOrdenation = styled.div`
 
     h3 {
       margin-right: 2rem;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+        font-size: 1rem;
+      }
     }
   }
 `;
@@ -50,6 +97,17 @@ export const GridEditorial = styled.ul`
 
   margin-top: 5rem;
 
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-top: 2rem;
+  }
+
   li {
     display: flex;
     flex-direction: column;
@@ -58,6 +116,16 @@ export const GridEditorial = styled.ul`
     margin-bottom: 4rem;
 
     border-left: 3px solid red;
+
+    @media (max-width: 900px) {
+      padding: 25px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 900px) {
+      padding: 20px;
+      margin-bottom: 0;
+    }
 
     img {
       width: 100%;

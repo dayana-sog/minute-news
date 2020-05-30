@@ -13,7 +13,7 @@ function Footer() {
       <img src={logo} alt="logo" />
 
       <WrapperFooter>
-        <Copy>© Copyright {year} Minuto News e Participações S.A</Copy>
+        <Copy>© Copyright {year} Minuto News S.A</Copy>
 
         <ul>
           <li>princípios editoriais</li>
